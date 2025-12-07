@@ -1,50 +1,54 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Static Web App Constitution
 
-## Core Principles
+Purpose
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+This document lists the minimal, non-negotiable requirements for a static web application created from the project template. It is intentionally short — implementers should follow these items to produce a deployable, maintainable static site.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+Scope
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+- Single-page apps or multi-page static sites produced by the template.
+- Static assets served over HTTPS from a CDN or static-hosting provider.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+Minimum Requirements
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+- **Required files**: `index.html`, `README.md`, `assets/` (images, fonts), `styles/` (CSS), `scripts/` (optional JS), `favicon.ico`.
+- **Metadata**: `index.html` must include a `title` and `meta description`.
+- **Build**: If the template includes a build step, provide a single `build` command in `package.json` (or equivalent) that outputs to a `dist/` or `build/` directory.
+- **Dev server**: Provide a `start` or `dev` command for local testing (port and simple instructions in `README.md`).
+- **Routing**: If the site is an SPA, configure the host to fallback to `index.html` for unknown routes (single-page routing support).
+- **HTTPS**: All deployments must use HTTPS by default.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+Security & Privacy (minimum)
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- Serve with an appropriate Content Security Policy (CSP) header; include a recommended minimal policy snippet in `README.md` or hosting config.
+- Ensure no secrets or credentials are committed to the repo. Any runtime secrets must be injected by the host (not stored in source).
+- Provide a `robots.txt` (allow or disallow as appropriate) and a minimal `privacy` note in `README.md` if the site collects data.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+Accessibility & Quality
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- Follow basic accessibility: pages must have semantic headings, meaningful link text, and images must include `alt` text where appropriate.
+- Run a link-check and report broken links before release.
 
-## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+Deployment Targets
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+- Support at least one of: GitHub Pages, Netlify, Vercel, or an S3+CDN setup.
+- Include a short deploy section in `README.md` describing the chosen provider and steps to publish the `dist/` or `build/` directory.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+CI & Tests (minimal)
+
+- Provide a lightweight CI step that at minimum:
+	- builds the site (if applicable),
+	- runs a link-check or HTML validation step,
+	- optionally lints CSS/JS.
+
+Maintenance & Governance
+
+- Keep the `README.md` up to date with local dev and deploy commands.
+- Document the site `Version` and a `Maintainer` contact (email or team) in `README.md` or repository metadata.
+
+Amendments
+
+This constitution is intentionally minimal. Changes must be recorded by updating the `Version` and the `Last Amended` date below.
+
+**Version**: 1.0 | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
+
