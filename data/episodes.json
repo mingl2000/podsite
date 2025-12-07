@@ -1,0 +1,222 @@
+[
+  {
+    "id": "1",
+    "slug": "welcome-to-the-podcast",
+    "title": "Welcome to the Podcast",
+    "description": "An introduction to our podcast and what listeners can expect from future episodes.",
+    "publish_date": "2025-01-15",
+    "duration": 1240,
+    "image": "assets/images/episode-01.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Welcome\n\nThis is our first episode! We discuss the goals of the podcast and introduce the hosts. Join us as we explore fascinating topics each week.\n\n## Highlights\n- Introduction to hosts\n- What's coming next\n- How to listen and subscribe"
+  },
+  {
+    "id": "2",
+    "slug": "episode-2-exploring-web-tech",
+    "title": "Exploring Modern Web Technologies",
+    "description": "A deep dive into the latest tools and frameworks shaping web development in 2025.",
+    "publish_date": "2025-01-22",
+    "duration": 1850,
+    "image": "assets/images/episode-02.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Modern Web Tech\n\nWe discuss Next.js, React, Tailwind CSS and more. Industry trends and best practices."
+  },
+  {
+    "id": "3",
+    "slug": "episode-3-design-systems",
+    "title": "Building Design Systems",
+    "description": "Best practices for creating scalable, maintainable design systems across teams.",
+    "publish_date": "2025-01-29",
+    "duration": 1620,
+    "image": "assets/images/episode-03.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Design Systems\n\nHow to build component libraries and maintain consistency."
+  },
+  {
+    "id": "4",
+    "slug": "episode-4-api-design",
+    "title": "API Design Best Practices",
+    "description": "Creating REST and GraphQL APIs that scale and remain easy to use for developers.",
+    "publish_date": "2025-02-05",
+    "duration": 1750,
+    "image": "assets/images/episode-04.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# API Design\n\nREST vs GraphQL, versioning strategies, and documentation."
+  },
+  {
+    "id": "5",
+    "slug": "episode-5-testing-strategies",
+    "title": "Testing Strategies for Large Projects",
+    "description": "Unit, integration, and end-to-end testing approaches for modern applications.",
+    "publish_date": "2025-02-12",
+    "duration": 1890,
+    "image": "assets/images/episode-05.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Testing\n\nTest pyramids, tools, and best practices."
+  },
+  {
+    "id": "6",
+    "slug": "episode-6-performance-optimization",
+    "title": "Performance Optimization Techniques",
+    "description": "Strategies for optimizing web application performance and user experience.",
+    "publish_date": "2025-02-19",
+    "duration": 1710,
+    "image": "assets/images/episode-06.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Performance\n\nCode splitting, lazy loading, caching, and metrics."
+  },
+  {
+    "id": "7",
+    "slug": "episode-7-security-essentials",
+    "title": "Security Essentials for Web Apps",
+    "description": "Essential security practices every web developer should know and implement.",
+    "publish_date": "2025-02-26",
+    "duration": 1560,
+    "image": "assets/images/episode-07.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Security\n\nCSP, authentication, authorization, and common vulnerabilities."
+  },
+  {
+    "id": "8",
+    "slug": "episode-8-devops-basics",
+    "title": "DevOps Basics for Developers",
+    "description": "Understanding containers, CI/CD, and deployment pipelines from a developer's perspective.",
+    "publish_date": "2025-03-05",
+    "duration": 1820,
+    "image": "assets/images/episode-08.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# DevOps\n\nDocker, Kubernetes, GitHub Actions, and deployment strategies."
+  },
+  {
+    "id": "9",
+    "slug": "episode-9-open-source-contribution",
+    "title": "Contributing to Open Source",
+    "description": "A guide for developers looking to contribute to open-source projects and communities.",
+    "publish_date": "2025-03-12",
+    "duration": 1680,
+    "image": "assets/images/episode-09.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Open Source\n\nFinding projects, making pull requests, and building communities."
+  },
+  {
+    "id": "10",
+    "slug": "episode-10-career-development",
+    "title": "Career Development in Tech",
+    "description": "Strategies for growing your career as a software engineer and developer.",
+    "publish_date": "2025-03-19",
+    "duration": 1745,
+    "image": "assets/images/episode-10.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Career\n\nSkill-building, networking, interviews, and leadership."
+  },
+  {
+    "id": "11",
+    "slug": "episode-11-accessibility-design",
+    "title": "Accessibility in Web Design",
+    "description": "Building inclusive web experiences that work for everyone, including users with disabilities.",
+    "publish_date": "2025-03-26",
+    "duration": 1590,
+    "image": "assets/images/episode-11.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Accessibility\n\nWCAG, ARIA, testing tools, and inclusive design principles."
+  },
+  {
+    "id": "12",
+    "slug": "episode-12-ux-research",
+    "title": "UX Research Fundamentals",
+    "description": "Understanding user needs through research to inform better product and design decisions.",
+    "publish_date": "2025-04-02",
+    "duration": 1810,
+    "image": "assets/images/episode-12.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# UX Research\n\nInterviews, surveys, prototyping, and user testing."
+  },
+  {
+    "id": "13",
+    "slug": "episode-13-machine-learning-basics",
+    "title": "Machine Learning for Web Developers",
+    "description": "Getting started with ML and AI as a web developer: frameworks, models, and use cases.",
+    "publish_date": "2025-04-09",
+    "duration": 1920,
+    "image": "assets/images/episode-13.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Machine Learning\n\nTensorFlow.js, frameworks, and practical applications."
+  },
+  {
+    "id": "14",
+    "slug": "episode-14-headless-cms",
+    "title": "Headless CMS Architecture",
+    "description": "Exploring headless CMS solutions and how they fit into modern web development workflows.",
+    "publish_date": "2025-04-16",
+    "duration": 1750,
+    "image": "assets/images/episode-14.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Headless CMS\n\nStrapi, Contentful, Sanity, and when to use them."
+  },
+  {
+    "id": "15",
+    "slug": "episode-15-static-site-generation",
+    "title": "Static Site Generation Strategies",
+    "description": "Deep dive into static site generation, JAMstack, and modern deployment workflows.",
+    "publish_date": "2025-04-23",
+    "duration": 1680,
+    "image": "assets/images/episode-15.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Static Sites\n\nNext.js, 11ty, Hugo, Netlify, and Vercel."
+  },
+  {
+    "id": "16",
+    "slug": "episode-16-monitoring-observability",
+    "title": "Monitoring and Observability",
+    "description": "Tools and techniques for monitoring applications, debugging issues, and understanding user behavior.",
+    "publish_date": "2025-04-30",
+    "duration": 1820,
+    "image": "assets/images/episode-16.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Monitoring\n\nLogging, tracing, metrics, and error tracking."
+  },
+  {
+    "id": "17",
+    "slug": "episode-17-database-optimization",
+    "title": "Database Optimization and Queries",
+    "description": "Techniques for optimizing database queries and schemas for performance at scale.",
+    "publish_date": "2025-05-07",
+    "duration": 1910,
+    "image": "assets/images/episode-17.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Databases\n\nIndexing, query optimization, and normalization."
+  },
+  {
+    "id": "18",
+    "slug": "episode-18-real-time-communication",
+    "title": "Real-Time Communication in Web Apps",
+    "description": "WebSockets, Server-Sent Events, and building real-time features into web applications.",
+    "publish_date": "2025-05-14",
+    "duration": 1760,
+    "image": "assets/images/episode-18.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Real-Time\n\nWebSockets, SSE, polling, and libraries like Socket.io."
+  },
+  {
+    "id": "19",
+    "slug": "episode-19-mobile-web-development",
+    "title": "Mobile-First Web Development",
+    "description": "Building responsive, performant web applications optimized for mobile devices and networks.",
+    "publish_date": "2025-05-21",
+    "duration": 1640,
+    "image": "assets/images/episode-19.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Mobile Web\n\nResponsive design, progressive web apps, and performance on slow networks."
+  },
+  {
+    "id": "20",
+    "slug": "episode-20-future-of-web",
+    "title": "The Future of Web Development",
+    "description": "Exploring upcoming technologies and trends that will shape the future of web development.",
+    "publish_date": "2025-05-28",
+    "duration": 1890,
+    "image": "assets/images/episode-20.jpg",
+    "audio": "assets/audio/sample.mp3",
+    "notes": "# Future\n\nWeb3, serverless, edge computing, AI integration, and emerging standards."
+  }
+]

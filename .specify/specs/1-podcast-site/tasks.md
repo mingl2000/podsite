@@ -5,57 +5,57 @@
 
 Phase 1 — Setup
 
-- [ ] T001 Create Next.js project skeleton and `package.json` with basic scripts at repository root (`package.json`, `next.config.js`) — `./package.json`, `./next.config.js`
-- [P] T002 Create mocked episodes data file with 20 items at `data/episodes.json` — `./data/episodes.json`
-- [P] T003 Add a sample audio placeholder at `assets/audio/sample.mp3` (small silent or short sample file) — `./assets/audio/sample.mp3`
-- [P] T004 Add Tailwind CSS configuration and initial global styles (`tailwind.config.js`, `postcss.config.js`, `styles/globals.css`) — `./tailwind.config.js`, `./postcss.config.js`, `./styles/globals.css`
-- [P] T005 Add `README.md` quickstart and minimal CSP guidance (copy from `specs/main/quickstart.md`) — `./README.md`
-- [P] T006 Add `.gitignore` entries for `node_modules/`, `.next/`, `dist/` and local dev files — `./.gitignore`
+- [x] T001 Create Next.js project skeleton and `package.json` with basic scripts at repository root (`package.json`, `next.config.js`) — `./package.json`, `./next.config.js`
+- [x] T002 Create mocked episodes data file with 20 items at `data/episodes.json` — `./data/episodes.json`
+- [x] T003 Add a sample audio placeholder at `assets/audio/sample.mp3` (small silent or short sample file) — `./assets/audio/sample.mp3`
+- [x] T004 Add Tailwind CSS configuration and initial global styles (`tailwind.config.js`, `postcss.config.js`, `styles/globals.css`) — `./tailwind.config.js`, `./postcss.config.js`, `./styles/globals.css`
+- [x] T005 Add `README.md` quickstart and minimal CSP guidance (copy from `specs/main/quickstart.md`) — `./README.md`
+- [x] T006 Add `.gitignore` entries for `node_modules/`, `.next/`, `dist/` and local dev files — `./.gitignore`
 
 Phase 2 — Foundational (blocking prerequisites)
 
-- [ ] T007 Add `next.config.js` configured for static export and ensure export output to `dist/` — `./next.config.js`
-- [ ] T008 Add `npm run dev`, `npm run build`, and `npm run export` scripts to `package.json` (document ports) — `./package.json`
-- [ ] T009 Add CI workflow to build, export and run link-check (`.github/workflows/ci.yml`) — `./.github/workflows/ci.yml`
-- [P] T010 Add a link-check script and package entry that can be called locally and in CI (e.g., `scripts/check-links.js`, `package.json` script `check-links`) — `./scripts/check-links.js`, `./package.json`
-- [ ] T011 Add a data validation script that validates `data/episodes.json` against the schema `specs/main/contracts/episodes.schema.json` and fail CI if invalid (`scripts/validate-data.js`) — `./scripts/validate-data.js`
+- [x] T007 Add `next.config.js` configured for static export and ensure export output to `dist/` — `./next.config.js`
+- [x] T008 Add `npm run dev`, `npm run build`, and `npm run export` scripts to `package.json` (document ports) — `./package.json`
+- [x] T009 Add CI workflow to build, export and run link-check (`.github/workflows/ci.yml`) — `./.github/workflows/ci.yml`
+- [x] T010 Add a link-check script and package entry that can be called locally and in CI (e.g., `scripts/check-links.js`, `package.json` script `check-links`) — `./scripts/check-links.js`, `./package.json`
+- [x] T011 Add a data validation script that validates `data/episodes.json` against the schema `specs/main/contracts/episodes.schema.json` and fail CI if invalid (`scripts/validate-data.js`) — `./scripts/validate-data.js`
 
 Phase 3 — User Story 1 (US1) Landing page (P1)
 
-- [ ] T012 [US1] Create homepage page with featured episode block and proper meta tags (`pages/index.js`) — `./pages/index.js`
-- [ ] T013 [US1] Implement `components/FeaturedEpisode.js` used by the homepage (`components/FeaturedEpisode.js`) — `./components/FeaturedEpisode.js`
-- [ ] T014 [US1] Add homepage styling (Tailwind classes / `styles/globals.css`) and ensure image `alt` text present — `./styles/globals.css`, `./pages/index.js`
-- [P] T015 [US1] Add an end-to-end test for the homepage validating featured block presence (`tests/playwright/homepage.spec.ts`) — `./tests/playwright/homepage.spec.ts`
+- [x] T012 [US1] Create homepage page with featured episode block and proper meta tags (`pages/index.js`) — `./pages/index.js`
+- [x] T013 [US1] Implement `components/FeaturedEpisode.js` used by the homepage (`components/FeaturedEpisode.js`) — `./components/FeaturedEpisode.js`
+- [x] T014 [US1] Add homepage styling (Tailwind classes / `styles/globals.css`) and ensure image `alt` text present — `./styles/globals.css`, `./pages/index.js`
+- [ ] T015 [US1] Add an end-to-end test for the homepage validating featured block presence (`tests/playwright/homepage.spec.ts`) — `./tests/playwright/homepage.spec.ts`
 
 Phase 4 — User Story 2 (US2) Episodes listing (P1)
 
-- [ ] T016 [US2] Create episodes listing page that reads `data/episodes.json` and renders 20 episodes (`pages/episodes/index.js`) — `./pages/episodes/index.js`
-- [ ] T017 [US2] Implement `components/EpisodeListItem.js` used by the episodes list (`components/EpisodeListItem.js`) — `./components/EpisodeListItem.js`
-- [P] T018 [US2] Add an automated test asserting `/episodes` lists exactly 20 items (`tests/playwright/episodes.spec.ts`) — `./tests/playwright/episodes.spec.ts`
+- [x] T016 [US2] Create episodes listing page that reads `data/episodes.json` and renders 20 episodes (`pages/episodes/index.js`) — `./pages/episodes/index.js`
+- [x] T017 [US2] Implement `components/EpisodeListItem.js` used by the episodes list (`components/EpisodeListItem.js`) — `./components/EpisodeListItem.js`
+- [ ] T018 [US2] Add an automated test asserting `/episodes` lists exactly 20 items (`tests/playwright/episodes.spec.ts`) — `./tests/playwright/episodes.spec.ts`
 
 Phase 5 — User Story 3 (US3) Episode detail pages (P2)
 
-- [ ] T019 [US3] Implement dynamic route `pages/episodes/[slug].js` with `getStaticPaths`/`getStaticProps` to generate per-episode pages (`pages/episodes/[slug].js`) — `./pages/episodes/[slug].js`
-- [ ] T020 [US3] Implement `components/EpisodeDetail.js` to render show notes and audio player (`components/EpisodeDetail.js`) — `./components/EpisodeDetail.js`
+- [x] T019 [US3] Implement dynamic route `pages/episodes/[slug].js` with `getStaticPaths`/`getStaticProps` to generate per-episode pages (`pages/episodes/[slug].js`) — `./pages/episodes/[slug].js`
+- [x] T020 [US3] Implement `components/EpisodeDetail.js` to render show notes and audio player (`components/EpisodeDetail.js`) — `./components/EpisodeDetail.js`
 - [ ] T021 [US3] Ensure at least the featured episode and one other episode have working static pages after build (verify in `dist/`) — `./dist/` (output verification)
 
 Phase 6 — User Story 4 (US4) About & FAQ (P3)
 
-- [ ] T022 [US4] Create About page `pages/about.js` with semantic headings and content (`pages/about.js`) — `./pages/about.js`
-- [ ] T023 [US4] Create FAQ page `pages/faq.js` with semantic headings and content (`pages/faq.js`) — `./pages/faq.js`
-- [P] T024 [US4] Add content accessibility verification step (axe or Playwright accessibility check) as a script and CI job (`scripts/check-accessibility.js`, CI workflow) — `./scripts/check-accessibility.js`, `./.github/workflows/ci.yml`
+- [x] T022 [US4] Create About page `pages/about.js` with semantic headings and content (`pages/about.js`) — `./pages/about.js`
+- [x] T023 [US4] Create FAQ page `pages/faq.js` with semantic headings and content (`pages/faq.js`) — `./pages/faq.js`
+- [ ] T024 [US4] Add content accessibility verification step (axe or Playwright accessibility check) as a script and CI job (`scripts/check-accessibility.js`, CI workflow) — `./scripts/check-accessibility.js`, `./.github/workflows/ci.yml`
 
 Phase 7 — User Story 5 (US5) Link integrity & SEO (cross-cutting)
 
-- [P] T025 [US5] Add meta tags for homepage and episode pages using Next.js `Head` component (ensure `title` and `meta description`) — `./pages/index.js`, `./pages/episodes/[slug].js`
-- [ ] T026 [US5] Ensure link-check runs in CI and fails the build on broken internal links (tie to `T009`) — `./.github/workflows/ci.yml`
+- [x] T025 [US5] Add meta tags for homepage and episode pages using Next.js `Head` component (ensure `title` and `meta description`) — `./pages/index.js`, `./pages/episodes/[slug].js`
+- [x] T026 [US5] Ensure link-check runs in CI and fails the build on broken internal links (tie to `T009`) — `./.github/workflows/ci.yml`
 - [P] T027 [US5] Add a local script to run link-check (`scripts/check-links.ps1` or `scripts/check-links.js`) — `./scripts/check-links.ps1`
 
 Final Phase — Polish & Cross-cutting concerns
 
-- [P] T028 Add responsive image guidelines and optimize images for mobile (use `public/assets/images/` and `srcset` or `next/image`) — `./pages/*`, `./components/*`, `./public/assets/images/`
-- [P] T029 Add README badges (CI) and `Maintainer` contact to `README.md` — `./README.md`
-- [ ] T030 Add a short deploy guide for Vercel and Netlify to `README.md` (copy from `specs/main/quickstart.md`) — `./README.md`
+- [x] T028 Add responsive image guidelines and optimize images for mobile (use `public/assets/images/` and `srcset` or `next/image`) — `./pages/*`, `./components/*`, `./public/assets/images/`
+- [x] T029 Add README badges (CI) and `Maintainer` contact to `README.md` — `./README.md`
+- [x] T030 Add a short deploy guide for Vercel and Netlify to `README.md` (copy from `specs/main/quickstart.md`) — `./README.md`
 
 Dependencies (high-level)
 
