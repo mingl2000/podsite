@@ -160,15 +160,3 @@ For questions or issues, contact the maintainer.
 
 **Version**: 1.0.0 | **Last Updated**: 2025-12-06
 
-Agent/GTP-5 mini: For things that need clarification, use the best guess you
-think is reasonable. Update acceptance checklist after.
-
-
-spec.md/GTP-5:/speckit.plan I am going to use Next.js with static site configuration, no databases - data is embedded in the content for the mock episodes. Site is responsive and ready for mobile.
-
-plan.md/agent: /speckit.tasks break this down into tasks
-
-**Implemement**
-
-Agent/Claude Haiku 4.5:Implement the tasks for this project, and update the task list as you go.
-
