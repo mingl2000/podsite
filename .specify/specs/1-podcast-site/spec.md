@@ -82,6 +82,15 @@ Assumptions
 - Audio files may be sample files or external public sample URLs; playback is optional for specification tests (presence of player control is required).
 - The project template supports a static build step; if it does not, the implementer will add a minimal build (copy files to `dist/`).
 
+Clarifications (reasonable defaults)
+
+- **Local dev command**: `npm run dev` serving on port `3000` for local testing (documented in `README.md`).
+- **Build command & output**: `npm run build` → outputs to `dist/` directory.
+- **Data location**: mocked episodes live in `data/episodes.json` and must contain exactly 20 items for the episodes list requirement.
+- **Sample audio**: include a single sample audio file at `assets/audio/sample.mp3`; episode `audio` fields may reference that sample or a relative path.
+- **SPA fallback**: if the site is implemented as an SPA, hosting MUST be configured to fallback to `index.html` for client-side routes.
+- **CSP**: include a recommended minimal CSP snippet in `README.md` (see checklist/README guidance). This is a guidance item, not enforced by the build.
+
 Acceptance Criteria
 
 - AC-1: All FR items above have automated or manual acceptance tests described in `User Scenarios & Testing`.
